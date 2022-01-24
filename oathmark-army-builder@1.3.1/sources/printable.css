@@ -1,0 +1,246 @@
+@media print {
+  .no-print {
+      display: none !important;
+    }
+  .only_print {
+    display: block !important;
+  }
+
+  .only_print_inline {
+    display: inline !important;
+  }
+  .outerRing {
+    fill: none !important;
+  }
+
+  .print {
+    display: block !important;
+    fill: black !important;
+  }
+
+  .form-control
+  {
+    border: 0;
+    padding:0;
+    overflow:visible;
+    appearance: none;
+    padding-bottom: 5%;
+  }
+
+  input, textarea {
+    border: 0 !important;
+    border-style: none !important;
+  }
+
+  table.table-bordered{
+      border:1px solid black !important;
+  }
+  table.table-bordered > tbody > tr > th{
+      border:1px solid black !important;
+  }
+  table.table-bordered > tbody > tr > td{
+      border:1px solid black !important;
+  }
+
+  @page {
+    margin:0;
+  }
+
+  #veteransContainer {
+    margin: 2cm;
+  }
+
+  #armyContainer {
+    margin: 2cm;
+  }
+
+  #compendiumContainer {
+    margin-top: 1cm;
+    left: 1cm;
+    right: 1cm;
+  }
+
+  #terrainSelection {
+    margin: 2cm;
+  }
+
+  .tableSeperator{
+    display:block;
+    width:100%;
+    height: 2cm;
+    clear: both;
+  }
+
+  .compendiumSeperator{
+    display:block;
+    width:100%;
+    height: 0.5cm;
+    clear: both;
+  }
+
+  .compendiumDiv{
+    color-adjust: exact;
+  }
+}
+
+.only_print {
+  display: none;
+}
+
+.only_print_inline {
+  display: none;
+}
+
+#nonImportButtons, #nonImportKingdomButtons, #nonImportVeteransButtons {
+  display:none;
+}
+
+@font-face {
+  font-family: "marches";
+  src: url("./Imperator.ttf");
+}
+
+body {
+  font-family: "marches";
+}
+
+.white {
+  color: #111;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+  background-color: #ccc;
+  border-color: #202020 #1a1a1a #111;
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+}
+.white:hover {
+  background-color: #aaaaaa;
+  background-image: -webkit-linear-gradient(top, #ccc, #555);
+  background-image: -moz-linear-gradient(top, #ccc, #555);
+  background-image: -o-linear-gradient(top, #ccc, #555);
+  background-image: linear-gradient(to bottom, #ccc, #555);
+}
+
+.lightGrey {
+  color: wheat;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .7);
+  background-color: #303030;
+  border-color: #1c1c1c #202020 #222;
+  background-image: -webkit-linear-gradient(top, #8e8e8e, #434343);
+  background-image: -moz-linear-gradient(top, #8e8e8e, #434343);
+  background-image: -o-linear-gradient(top, #8e8e8e, #434343);
+  background-image: linear-gradient(to bottom, #8e8e8e, #434343);
+}
+.lightGrey:hover {
+  color: wheat;
+  background-color: #313131;
+  background-image: -webkit-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: -moz-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: -o-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: linear-gradient(to bottom, #7b7b7b, #2a2a2a);
+}
+
+.invertedGrey {
+  color: #363636;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .7);
+  background-color: wheat;
+  border-color: #1c1c1c #202020 #222;
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+}
+.invertedGrey:hover {
+  color: whitesmoke;
+  background-color: wheat;
+  background-image: -webkit-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: -moz-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: -o-linear-gradient(top, #7b7b7b, #2a2a2a);
+  background-image: linear-gradient(to bottom, #7b7b7b, #2a2a2a);
+}
+
+.rounded {
+  border-radius:100em !important;
+  margin: 1%;
+}
+
+.navbar {
+  background-color: wheat;
+  border-color: #1c1c1c #202020 #222;
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+}
+
+.nav-item {
+  text-decoration: none !important;
+  width: 30%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center; 
+}
+
+.nav-item:hover {
+  color: black !important;
+}
+
+.outerRing {
+  display: none;
+  cursor: pointer;
+}
+
+#armyBar{
+  position: fixed;
+  top: 4em;
+  bottom: 4em;
+  right: -18em; 
+  transition: 0.3s; 
+  padding: 1em; 
+  width: 20em; 
+  background-color: wheat;
+  border-color: #1c1c1c #202020 #222;
+  border-radius: 2em 0 0 2em; 
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+  overflow: auto;
+}
+
+#armyBar h4{
+  text-align: center; 
+}
+
+#armyBar:hover {
+  right: 0; 
+}
+
+#veteranBar{
+  position: fixed;
+  top: 4em;
+  bottom: 4em;
+  left: -18em; 
+  transition: 0.3s; 
+  padding: 1em; 
+  width: 20em; 
+  background-color: wheat;
+  border-color: #1c1c1c #202020 #222;
+  border-radius: 0 2em 2em 0; 
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+  overflow: auto;
+}
+
+#veteranBar h4{
+  text-align: center; 
+}
+
+#veteranBar:hover {
+  left: 0; 
+}
